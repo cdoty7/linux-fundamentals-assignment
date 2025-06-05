@@ -1,0 +1,1 @@
+0 2 * * * ./linux-fundamentals-assignment/Linux-Assignment/log_maintain.sh
