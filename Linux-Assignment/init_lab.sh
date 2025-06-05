@@ -15,12 +15,13 @@ apt install net-tools
 #Creates 3 users: devops, qa, intern.
 #Adds them to a group engineering.
 
+groupadd engineering
+
 useradd -g engineering devops
 useradd -g engineering qa
 useradd -g engineering intern
 
 #Sets default passwords (use chpasswd) and forces password change (change).
-chpasswd 
-devops:Computer123 change
-qa:Computer123 change
-intern:Computer123 change
+echo "devops:Computer123" | chpasswd -e
+echo "qa:Computer123" | chpasswd -e
+echo "intern:Computer123" | chpasswd -e
